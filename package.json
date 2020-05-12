@@ -13,10 +13,10 @@
     "lint": "yarn eslint src/*.ts* src/**/*.ts*",
     "lint:fix": "pretty-quick --staged",
     "start": "ts-node  src/main.ts",
+    "start:dev": "yarn nodemon",
     "test": "yarn test:static && yarn test:unit",
     "test:static": "yarn tsc",
-    "test:unit": "yarn jest --config=.jestrc.js --maxWorkers 2 --detectOpenHandles --forceExit --coverage --no-cache ",
-    "start:dev": "yarn nodemon"
+    "test:unit": "yarn jest --config=.jestrc.js --maxWorkers 2 --detectOpenHandles --forceExit --coverage --no-cache "
   },
   "engines": {
   "node": ">=12.7.x",
