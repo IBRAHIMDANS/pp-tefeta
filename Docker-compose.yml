@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  pp-tefeta:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: pp-tefeta
+    restart: always
+    ports:
+      - 8080:8080
