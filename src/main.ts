@@ -2,7 +2,7 @@
 
 import { readFileSync } from 'fs';
 
-function main(file: string = process.argv[2]) {
+(function main(file: string = process.argv[2]) {
     if (!file) {
         throw new Error('please give file');
     }
@@ -52,6 +52,4 @@ function main(file: string = process.argv[2]) {
         lignes++;
     }
     console.log(path);
-}
-
-main();
+})();
